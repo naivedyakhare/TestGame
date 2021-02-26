@@ -7,7 +7,8 @@ document.querySelector('.check').addEventListener('click', theNumberChecker);
 document.querySelector('.again').addEventListener('click', onceAgain);
 
 const displayMessage = function (message) {
-    document.querySelector('.message').textContent = message;
+    document.querySelector('.messageMobile').textContent = message;
+    document.querySelector('.messageLaptop').textContent = message;
 }
 
 function theNumberChecker() {
