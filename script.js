@@ -7,8 +7,9 @@ document.querySelector('.check').addEventListener('click', theNumberChecker);
 document.querySelector('.again').addEventListener('click', onceAgain);
 
 const displayMessage = function (message) {
-    document.querySelector('.messageMobile').textContent = message;
-    document.querySelector('.messageLaptop').textContent = message;
+    const width = window.innerWidth;
+    if(width >= 651) document.querySelector('.messageLaptop').textContent = message;
+    else document.querySelector('.messageMobile').textContent = message;
 }
 
 function theNumberChecker() {
